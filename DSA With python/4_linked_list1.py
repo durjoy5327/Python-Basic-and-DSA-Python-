@@ -80,7 +80,6 @@ class Linkedlist():
             count+=1
     def insert_after_value(self, data_after, data_to_insert):
         itr= self.head
-        print("Got it")
         while itr:
             if itr.data ==data_after:
                 node= Node(data_to_insert, itr.next)
@@ -88,6 +87,24 @@ class Linkedlist():
                 return
             itr= itr.next
         raise Exception(f"No data found like {data_after} in linked list")
+    
+    def remove_by_value(self, data):
+        if self.head is None:
+            return
+
+        if self.head.data == data:
+            self.head = self.head.next
+            return
+        itr= self.head
+        while itr:
+            if itr.next.data==data:
+                itr.next= itr.next.next
+                return
+            itr= itr.next
+        raise Exception("The Value was not found or doesn't exist ")
+
+
+
 
 link= Linkedlist()
 """
@@ -110,5 +127,7 @@ link.print()
 """
 link.insert_values(["Durjoy","Mehlaching","Belal","Promi","Rubel"])
 link.insert_after_value("Mehlaching" ,"Joya")
+link.print()
+link.remove_by_value("Promi")
 link.print()
 
