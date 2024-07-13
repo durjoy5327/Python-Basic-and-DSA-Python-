@@ -78,8 +78,16 @@ class Linkedlist():
 
             itr=itr.next
             count+=1
-
-
+    def insert_after_value(self, data_after, data_to_insert):
+        itr= self.head
+        print("Got it")
+        while itr:
+            if itr.data ==data_after:
+                node= Node(data_to_insert, itr.next)
+                itr.next= node
+                return
+            itr= itr.next
+        raise Exception(f"No data found like {data_after} in linked list")
 
 link= Linkedlist()
 """
@@ -94,9 +102,13 @@ link.remove(3)
 link.print()
 
 print("Length of the linked list is :" ,link.LinkedList_length())
-"""
+
 link.insert_values(["Durjoy","Mehlaching","Belal","Promi","Rubel"])
 link.insert_At(0, "Akash")
 link.insert_At(3, "Joya")
+link.print()
+"""
+link.insert_values(["Durjoy","Mehlaching","Belal","Promi","Rubel"])
+link.insert_after_value("Mehlaching" ,"Joya")
 link.print()
 
