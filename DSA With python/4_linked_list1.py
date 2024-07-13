@@ -7,7 +7,7 @@ class Linkedlist():
     def __init__(self):
         self.head= None
     
-    def insert_at_begginning(self , data):
+    def insert_at_beginning(self , data):
         self.head=Node(data , self.head)
     
     def insert_at_end(self , data):
@@ -32,7 +32,6 @@ class Linkedlist():
         return count
     
     def insert_values(self, valuelist):
-        self.head=None
         for val in valuelist:
             self.insert_at_end(val)
 
@@ -66,7 +65,7 @@ class Linkedlist():
             raise Exception("This is Not valid index")
             return
         if index==0:
-            self.insert_at_begginning(value)
+            self.insert_at_beginning(value)
 
         itr = self.head
         count=0
@@ -108,10 +107,10 @@ class Linkedlist():
 
 link= Linkedlist()
 """
-link.insert_at_begginning(25)
-link.insert_at_begginning(28)
-link.insert_at_begginning(20)
-link.insert_at_begginning(89)
+link.insert_at_beginning(25)
+link.insert_at_beginning(28)
+link.insert_at_beginning(20)
+link.insert_at_beginning(89)
 link.insert_at_end(500)
 
 link.insert_values(["Durjoy","Mehlaching","Belal","Promi","Rubel"])
