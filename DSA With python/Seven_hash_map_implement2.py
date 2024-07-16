@@ -34,7 +34,7 @@ ans.add("march 7",400)
 ans.add("march 10",280)
 ans.add("march 3",480)
 ans.add("march 20",200)
-
+ans.add("march 17",600)
 print(ans.get("march 6"))
 ans.delete("march 3")
 print(ans.Arr)
