@@ -6,7 +6,7 @@ from seven_hash_map_implement2 import HashTable
 """
 class HashTable:
     def __init__(self):
-        self.Max = 100
+        self.Max = 10
         self.Arr = [[] for i in range(self.Max)]
 
     def get_hash(self, key):
@@ -35,7 +35,10 @@ class HashTable:
 
     def delete(self, key):
         h = self.get_hash(key)
-        self.Arr[h] = [element for element in self.Arr[h] if element[0] != key]
+        for indx , element in enumerate(self.Arr[h]):
+            if element[0]==key:
+                del self.Arr[h][indx]
+        
 
     def print(self):
         for item in self.Arr:
