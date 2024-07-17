@@ -2,8 +2,8 @@
 sys.path.appned("F:\Python-Basic-and-DSA-Python-\DSA With python")
 from seven_hash_map_implement2 import HashTable
 
-
 """
+
 class HashTable:
     def __init__(self):
         self.Max = 10
