@@ -25,7 +25,6 @@ class Stack:
         return self.size()==0
     
     def Print(self):
-
         while self.container:
             k= self.container.pop()
             print(k)
