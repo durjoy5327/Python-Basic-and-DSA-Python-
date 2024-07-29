@@ -96,4 +96,4 @@ if __name__=='__main__':
     print("Found" if root.search(10) else "Not found")
     print(f"Maximum element in this tree is ", root.find_max())
     print(f"Minimum element in this tree is ", root.find_min())
-
+    
