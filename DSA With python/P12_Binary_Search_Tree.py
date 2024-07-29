@@ -50,6 +50,18 @@ class BinarySearchTree:
 
         return element
     
+    def postorder_traversal(self):
+        element=[]
+
+        if self.left:
+            element+=self.left.postorder_traversal()
+
+        if self.right:
+            element+= self.right.postorder_traversal()
+
+        element.append(self.data)
+
+        return element
     def search(self, element):
         if self.data== element:
             return True
@@ -93,7 +105,8 @@ if __name__=='__main__':
     root=build_tree(numbers)
     print(root.inorder_traversal())
     print(root.preorder_traversal())
+    print(root.postorder_traversal())
+
     print("Found" if root.search(10) else "Not found")
     print(f"Maximum element in this tree is ", root.find_max())
     print(f"Minimum element in this tree is ", root.find_min())
-    
