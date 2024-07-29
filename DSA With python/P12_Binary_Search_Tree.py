@@ -92,6 +92,29 @@ class BinarySearchTree:
         rightsum= self.right.sum() if self.right else 0
         return leftsum+ rightsum+self.data
 
+    def delete(self, val):
+        if self.data>val:
+            if self.left:
+                self.left=self.left.delete(val)
+        elif self.data<val:
+            if self.right:
+                self.right=self.right.delete(val)
+        else:
+            if self.left is None and self.right is None:
+                return None
+            # Node with one child
+            if self.left is None:
+                return self.right
+            if self.right is None:
+                return self.left
+            # Node with two children
+            min_val = self.right.find_min()
+            self.data = min_val
+            self.right = self.right.delete(min_val)
+        return self
+
+
+
 
 def build_tree(elements):
     root= BinarySearchTree(elements[0])
@@ -110,3 +133,7 @@ if __name__=='__main__':
     print("Found" if root.search(10) else "Not found")
     print(f"Maximum element in this tree is ", root.find_max())
     print(f"Minimum element in this tree is ", root.find_min())
+    root.delete(10)
+    print("Inorder Traversal after deleting 10:", root.inorder_traversal())  # [1, 3, 4, 5, 7, 8]
+    root.delete(5)
+    print("Inorder Traversal after deleting 5:", root.inorder_traversal())  # [1, 3, 4, 7, 8]
