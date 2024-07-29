@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Graph:
     def __init__(self, edges):
         self.edges=edges
@@ -25,25 +24,3 @@ if __name__=='main':
         ('newwork','toronto')
     ]
     routes_graph= Graph(routes)
-=======
-class Graph:
-    def __init__(self, edges):
-        self.data=data
-
-
-
-
-
-if __name__=='main':
-
-    cities=[
-        ('mombai', 'paris'),
-        ('mombai','dubai'),
-        ('paris','dubai'),
-        ('paris', 'newwork'),
-        ('dubai','newwork' ),
-        ('newwork','toronto')
-
-
-    ]
->>>>>>> b4ed05681e7d243de6a5918f3813fb64373dc8d5
