@@ -6,7 +6,7 @@ Welcome to my Python learning , Data Structures and Algorithms (DSA) learning re
 
 ## Overview
 
-This repository is created to document my journey of learning DSA with Python. Having already mastered DSA using C++, I'm now expanding my knowledge by exploring it with Python, a crucial step for my machine learning studies. 
+This repository is created to document my journey of learning DSA with Python. Though i gave already learned DSA using C++, I'm now expanding my knowledge by exploring it with Python, a crucial step for my machine learning studies. 
 
 I hope this repository will be a valuable resource for beginners, helping them understand and learn Python and DSA from the basics to advanced levels.
 
