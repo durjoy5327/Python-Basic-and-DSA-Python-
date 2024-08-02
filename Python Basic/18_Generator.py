@@ -1,6 +1,7 @@
 # Generator is a simply way to create iterator
 
 
+
 def Remote_Control_Next():
     yield "Hi"
     yield "Hello"
@@ -11,6 +12,7 @@ itr= Remote_Control_Next()
 print(next(itr))
 print(next(itr))
 print(next(itr))
+  
 
 #otherwise we can make a loop for print
 print('\n\nFor loop: ')
