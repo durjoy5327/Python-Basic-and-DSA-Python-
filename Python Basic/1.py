@@ -6,8 +6,6 @@ def print_pattern(n):
         print(s)
 
 
-
-
 if __name__=='__main__':
     n= input('Enter a number for triangle:')
     print_pattern(int(n))z
