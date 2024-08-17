@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pandas as pd
 df = pd.read_csv('F:\Python-Basic-and-DSA-Python-\Pandas\movies.csv', nrows=4)
 df.to_csv('new.csv',index=False)
@@ -6,3 +7,13 @@ df.to_csv('new.csv',index=False)
 #excel file has multiple sheets
 excel= pd.read_excel('F:\Python-Basic-and-DSA-Python-\Pandas\movies_db.xlsx', "movies")
 print(excel)
+=======
+import pandas as pd
+df = pd.read_csv('F:\Python-Basic-and-DSA-Python-\Pandas\movies.csv', nrows=4)
+df.to_csv('new.csv',index=False)
+
+
+#excel file has multiple sheets
+excel= pd.read_excel('F:\Python-Basic-and-DSA-Python-\Pandas\movies_db.xlsx', "movies")
+print(excel)
+>>>>>>> 0074fd330b352d25ffdd4e57209673a01c33e0ae
