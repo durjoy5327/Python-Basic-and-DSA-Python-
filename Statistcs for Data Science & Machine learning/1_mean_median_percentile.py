@@ -1,5 +1,5 @@
 """
-Your goal is to come up with new pandas dataframe that doesn't have 
+Our goal is to come up with new pandas dataframe that doesn't have 
 the outliers present in it.
 """
 
@@ -11,4 +11,11 @@ print(df.head(0))
 
 print(df.price.describe())
 
-print()
+lower_price, upper_price =df.price.quantile([0.01,0.999])
+
+df2=df[(df.price>lower_price) & (df.price<upper_price)]
+#shape is used to check how many rows and column in a dataframe
+print(df2.shape)
+
+print("\n\n\nAfter removing outliers: ")
+print(df2.sample(10))
