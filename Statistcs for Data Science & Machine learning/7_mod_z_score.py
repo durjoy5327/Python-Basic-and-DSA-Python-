@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import numpy as np
 
 def modified_z_score_condition(data, threshold=3.5):
@@ -22,7 +21,6 @@ data = np.array([10, 12, 12, 13, 12, 14, 15, 12, 10, 10, 100])  # 100 is an outl
 outliers_mask = modified_z_score_condition(data)
 
 print("Outliers mask:", outliers_mask)
-=======
 import numpy as np
 
 def modified_z_score_condition(data, threshold=3.5):
@@ -46,4 +44,3 @@ data = np.array([10, 12, 12, 13, 12, 14, 15, 12, 10, 10, 100])  # 100 is an outl
 outliers_mask = modified_z_score_condition(data)
 
 print("Outliers mask:", outliers_mask)
->>>>>>> 6e7d3dbbe24263c3b15965585e6b69f34f465a2b

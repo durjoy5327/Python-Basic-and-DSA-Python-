@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
@@ -40,7 +39,6 @@ remove_outliters=df[df['mod_z_score']>3]
 sns.barplot(x=remove_outliters['title'], y=remove_outliters['revenue'])
 plt.xticks(rotation=45)
 plt.show()
-=======
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
@@ -82,4 +80,3 @@ remove_outliters=df[df['mod_z_score']>3]
 sns.barplot(x=remove_outliters['title'], y=remove_outliters['revenue'])
 plt.xticks(rotation=45)
 plt.show()
->>>>>>> 6e7d3dbbe24263c3b15965585e6b69f34f465a2b
