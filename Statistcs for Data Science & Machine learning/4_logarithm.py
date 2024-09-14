@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pandas as pd
 import seaborn as sn
 from matplotlib import pyplot as plt
@@ -9,3 +10,16 @@ print(df.head(5))
 df.plot(x='company', y='revenue', kind='bar', logy=True)
 plt.show()
 
+=======
+import pandas as pd
+import seaborn as sn
+from matplotlib import pyplot as plt
+
+df = pd.read_csv(r"F:\Python-Basic-and-DSA-Python-\Statistcs for Data Science & Machine learning\revenue.csv")
+print(df.head(5))
+
+#log is use for explaining revenue in more details so that little differences can be shown breifly
+df.plot(x='company', y='revenue', kind='bar', logy=True)
+plt.show()
+
+>>>>>>> 6e7d3dbbe24263c3b15965585e6b69f34f465a2b

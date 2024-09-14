@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 You are given bhp.csv which contains property prices in the city of banglore, India. 
 You need to examine price_per_sqft column and do following,
@@ -49,3 +50,24 @@ df2['zscore']=( df2.price_per_sqft - df2.price_per_sqft.mean())/df2.price_per_sq
 df4= df2[(df2.zscore>-4)& (df2.zscore<4)]
 print(df4.shape)
 print(df2.shape[0]-df4.shape[0])
+=======
+"""
+You are given bhp.csv which contains property prices in the city of banglore, India. 
+You need to examine price_per_sqft column and do following,
+
+    1. Remove outliers using percentile technique first. Use [0.001, 0.999] for lower and upper 
+    bound percentiles
+    2.After removing outliers in step 1, you get a new dataframe.
+    3.On step(2) dataframe, use 4 standard deviation to remove outliers
+    4.Plot histogram for new dataframe that is generated after step (3). Also plot bell curve on 
+    same histogram
+    5.On step(2) dataframe, use zscore of 4 to remove outliers. This is quite similar to step (3) and
+    you will get exact same result
+
+"""
+import pandas as pd
+import seaborn as sn
+df= pd.read_csv("F:\Python-Basic-and-DSA-Python-\Statistcs for Data Science & Machine learning\bhp.csv", names=["Name","Income"],skiprows=[0])
+
+print(df.head())
+>>>>>>> 6e7d3dbbe24263c3b15965585e6b69f34f465a2b
